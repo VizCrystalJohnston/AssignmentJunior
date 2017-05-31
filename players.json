@@ -1,6 +1,1 @@
-{"players": [
-
-{"FirstName": "Bob", "Surname" : "Redwood", "Sex": {"name": "Male", "img": "icons/icon_male.svg"}, "Tier": {"name": "Bronze", "img": "icons/tier_bronze.svg"}, "Email": "BobRedwood@gmail.com"}
-
-
-]}
+{"players":[{"FirstName":"Bob","Surname":"Redwood","Sex":{"name":"Male","img":"icons/icon_male.svg"},"Tier":{"name":"Bronze","img":"icons/tier_bronze.svg"},"Email":"BobRedwood@gmail.com"},{"FirstName":"Karen","Surname":"Smith","Sex":{"name":"Female","img":"icons/icon_female.svg"},"Tier":{"name":"Gold","img":"icons/tier_gold.svg"},"Email":"KSmith@email.com"},{"FirstName":"Jeremy","Surname":"Kyle","Sex":{"name":"Male","img":"icons/icon_male.svg"},"Tier":{"name":"Silver","img":"icons/tier_silver.svg"},"Email":"JKyle@gmail.com"},{"FirstName":"Selena","Surname":"Gomez","Sex":{"name":"Female","img":"icons/icon_female.svg"},"Tier":{"name":"Bronze","img":"icons/tier_bronze.svg"},"Email":"SG@gmail.com"}]}

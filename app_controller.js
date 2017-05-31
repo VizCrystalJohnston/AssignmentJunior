@@ -6,15 +6,21 @@ function PlayersController($scope, PlayersFactory) {
 
     $scope.playersList = [];
 
-    // $scope.Tiers = [
-    // 	,
-    // 	{name: "Silver", img: "tier_silver.svg"},
-    // 	{name: "Gold", img: "tier_gold.svg"},
-    // ]
+    $scope.AllTiers = [
+    	{"name": "Bronze", "img": "icons/tier_bronze.svg"},
+    	{"name": "Silver", "img": "icons/tier_silver.svg"},
+    	{"name": "Gold", "img": "icons/tier_gold.svg"}
+    ]
 
-    init();
+    $scope.AllSexes = [
+    	{"name": "Male", "img":"icons/icon_male.svg"},
+    	{"name": "Female", "img":"icons/icon_female.svg"}
+    ]
 
-    function init() {
+    initializePlayers();
+
+    function initializePlayers() {
+    	console.log("DONE AND LOADED")
         PlayersFactory.loadPlayers()
             .then(function(response) {
                 $scope.playersList = response.data.players;
@@ -23,12 +29,23 @@ function PlayersController($scope, PlayersFactory) {
             });
     };
 
-    // function getTierImg(playerTier){
-    // 	for (i = 0; i < $scope.Tiers.length; i++) { 
-    // 		if(playerTier = $scope.Tiers[i].name){
-    // 			return $scope.Tiers[i].img
-    // 		}
-    // 	}
-    // };
+   $scope.addPlayer = function(){
+	var popup = document.getElementById("playerPopup");
+    	popup.classList.toggle("show");
+    }
+
+    $scope.addNewPlayer = function (){
+    	PlayersFactory.postPlayer($scope.player)
+    	.then(function(response) {
+               initializePlayers(); //DOESNT WORK COME BACK  TO
+            }, function(response) {
+                console.log("fail: " + response);
+            });
+
+    }
+
+    $scope.cancelPlayer = function(){
+
+    }
 
 }
