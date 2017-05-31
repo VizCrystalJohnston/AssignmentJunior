@@ -29,18 +29,18 @@
         <button type="button" ng-click="playerPopUp()" >Add Player</button>
         </div>
         <div class ="table-wrapper">
-        <table >
+        <table class= "col-lg-10">
 
             <tr>
                 <th></th>
                 <th>First Name</th>
                 <th>Surname</th>
-                <th>Sex</th>
-                <th>Tier</th>
+                <th >Sex</th>
+                <th >Tier</th>
                 <th>Email</th>
             </tr>
             <tr ng-repeat="(key, person) in playersList">
-                <td>{{key+1}}</td>
+                <td class="index-col">{{key+1}}</td>
                 <td>{{person.FirstName}}</td>
                 <td>{{person.Surname}}</td>
                 <td><img src="{{person.Sex.img}}" height="50" wdith="50"></td>
@@ -56,22 +56,24 @@
                 <label  required class="col-lg-3" for="player.FirstName">First Name</label>
                 <input  required class="col-lg-9" type="text" ng-model="player.FirstName">
                 <br>
-                <label>Surname</label>
-                <input required class="form-control" type="text" ng-model="player.Surname">
+                <label class="col-lg-3">Surname</label>
+                <input  class="col-lg-9"  required class="form-control" type="text" ng-model="player.Surname">
                 <br>
+                <div class="select-wrapper">
                 <label>Sex</label>
-                <select  required ng-model="player.Sex" ng-options="item as item.name for item in AllSexes">
+                <select "col-lg-3" required ng-model="player.Sex" ng-options="item as item.name for item in AllSexes">
                 <option value="" selected hidden />
                 </select>
                 <label>Tier</label>
                 <select required ng-model="player.Tier" ng-options="item as item.name for item in AllTiers">
                 <option value="" selected hidden />
                 </select>
+                </div>
                 <br>
-                <label>Email</label>
-                <input required class="form-control" type="text" ng-model="player.Email">
+                <label class="col-lg-3">Email</label>
+                <input  class="col-lg-9"  required class="form-control" type="text" ng-model="player.Email">
                 <br>
-                <div>
+                <div class="form-button-wrapper">
                     <button ng-click="cancelPlayer()">Cancel</button>
                     <button ng-click="addNewPlayer()">Add</button>
                 </div>

@@ -1,35 +1,81 @@
 @lighterGrey: #e6e6e6;
+@paleblue:  	#ADD8E6; 
 
-header{
-	padding: 10px 0px;
+header {
+    padding: 10px 0px;
 }
 
-.form-group select{
+.form-group select {
+    width: 40%;
+}
+
+.form-body {
+    
+    padding: 2%;
+}
+
+.player-display {
+    background-color: @lighterGrey;
+    padding-top: 50px;
+}
+
+
+
+table th, .index-col{
+	background: gray;
+}
+
+
+
+#playerPopup {
+    display: none;
+    width: 25%;
+    z-index: 1;
+    top: 50%;
+    position: absolute;
+    left: 40%;
+    background-color: LightGrey;
+}
+
+#playerPopup button{
+    float: right;
+    padding: 5px;
+}
+
+#playerPopup p{
+   background-color: darkgray;
+color: blue;
+padding: 10px;
+}
+
+.table-wrapper {
+    overflow-y: scroll;
+    overflow-x: hidden;
+    height: 500px;
+    z-index: 0;
+}
+
+label{
+	text-align: right;
+	font-size: 8pt;
+}
+	.col-lg-3{
+padding-right: 5px 
+}
+
+.select-wrapper{
 	
-	width: 30%;
+	float: right;
 }
 
-.form-body{
-	background-color: LightGrey;
-	padding: 2%;
-}
-
-.player-display{
-	background-color: @lighterGrey;
-	padding-top: 50px;
-}
-
-tr{
+.form-button-wrapper{
 	background-colour: white;
-
 }
 
-#playerPopup{
-	display: none;
-	width: 25%;
+table tr:hover{
+	background-color: @paleblue;
 }
 
-.table-wrapper{
-	overflow:scroll;
-	height:70%
+table tr:active{
+	background-color: blue;
 }

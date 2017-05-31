@@ -1,1 +1,44 @@
-{"players":[{"FirstName":"Bob","Surname":"Redwood","Sex":{"name":"Male","img":"icons/icon_male.svg"},"Tier":{"name":"Bronze","img":"icons/tier_bronze.svg"},"Email":"BobRedwood@gmail.com"},{"FirstName":"Karen","Surname":"Smith","Sex":{"name":"Female","img":"icons/icon_female.svg"},"Tier":{"name":"Gold","img":"icons/tier_gold.svg"},"Email":"KSmith@email.com"},{"FirstName":"Jeremy","Surname":"Kyle","Sex":{"name":"Male","img":"icons/icon_male.svg"},"Tier":{"name":"Silver","img":"icons/tier_silver.svg"},"Email":"JKyle@gmail.com"},{"FirstName":"Selena","Surname":"Gomez","Sex":{"name":"Female","img":"icons/icon_female.svg"},"Tier":{"name":"Bronze","img":"icons/tier_bronze.svg"},"Email":"SG@gmail.com"},{"FirstName":"sally","Surname":"brown","Sex":{"name":"Female","img":"icons/icon_female.svg"},"Tier":{"name":"Silver","img":"icons/tier_silver.svg"},"Email":"email@email.com"},{"FirstName":"greg","Surname":"greg","Sex":{"name":"Male","img":"icons/icon_male.svg"},"Tier":{"name":"Gold","img":"icons/tier_gold.svg"},"Email":"greg@greg.com"},{"FirstName":"abc","Surname":"def","Sex":{"name":"Male","img":"icons/icon_male.svg"},"Tier":{"name":"Bronze","img":"icons/tier_bronze.svg"},"Email":"abcdef@gmail.com"},{"FirstName":"abc","Surname":"def","Sex":{"name":"Male","img":"icons/icon_male.svg"},"Tier":{"name":"Bronze","img":"icons/tier_bronze.svg"},"Email":"abcdef@gmail.com"},{"FirstName":"test","Surname":"test","Sex":{"name":"Female","img":"icons/icon_female.svg"},"Tier":{"name":"Bronze","img":"icons/tier_bronze.svg"},"Email":"test"},{"FirstName":"test","Surname":"test","Sex":{"name":"Female","img":"icons/icon_female.svg"},"Tier":{"name":"Bronze","img":"icons/tier_bronze.svg"},"Email":"test"},{"FirstName":"test","Surname":"test","Sex":{"name":"Male","img":"icons/icon_male.svg"},"Tier":{"name":"Bronze","img":"icons/tier_bronze.svg"},"Email":"test"},{},{"FirstName":"bob"},{"FirstName":"bob","Sex":{"name":"Male","img":"icons/icon_male.svg"},"Email":"sdefs","Surname":"sdf"},{},{"FirstName":"bob"},{"FirstName":"bob","Sex":{"name":"Male","img":"icons/icon_male.svg"},"Email":"sdefs","Surname":"sdf"},{"FirstName":"sdf","Surname":"sdf","Sex":{"name":"Male","img":"icons/icon_male.svg"},"Tier":{"name":"Bronze","img":"icons/tier_bronze.svg"},"Email":"sdf"}]}
+{
+   "players":[
+      {
+         "FirstName":"Bob",
+         "Surname":"Redwood",
+         "Sex":{
+            "name":"Male",
+            "img":"icons/icon_male.svg"
+         },
+         "Tier":{
+            "name":"Bronze",
+            "img":"icons/tier_bronze.svg"
+         },
+         "Email":"BobRedwood@gmail.com"
+      },
+      {
+         "FirstName":"Karen",
+         "Surname":"Smith",
+         "Sex":{
+            "name":"Female",
+            "img":"icons/icon_female.svg"
+         },
+         "Tier":{
+            "name":"Gold",
+            "img":"icons/tier_gold.svg"
+         },
+         "Email":"KSmith@email.com"
+      },
+      {
+         "FirstName":"Jeremy",
+         "Surname":"Kyle",
+         "Sex":{
+            "name":"Male",
+            "img":"icons/icon_male.svg"
+         },
+         "Tier":{
+            "name":"Silver",
+            "img":"icons/tier_silver.svg"
+         },
+         "Email":"JKyle@gmail.com"
+      }
+     
+   ]
+}
