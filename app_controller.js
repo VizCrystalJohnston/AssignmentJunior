@@ -20,7 +20,6 @@ function PlayersController($scope, PlayersFactory) {
     initializePlayers();
 
     function initializePlayers() {
-    	console.log("DONE AND LOADED")
         PlayersFactory.loadPlayers()
             .then(function(response) {
                 $scope.playersList = response.data.players;
@@ -29,7 +28,7 @@ function PlayersController($scope, PlayersFactory) {
             });
     };
 
-   $scope.addPlayer = function(){
+   $scope.playerPopUp = function(){
 	var popup = document.getElementById("playerPopup");
     	popup.classList.toggle("show");
     }
@@ -37,7 +36,10 @@ function PlayersController($scope, PlayersFactory) {
     $scope.addNewPlayer = function (){
     	PlayersFactory.postPlayer($scope.player)
     	.then(function(response) {
-               initializePlayers(); //DOESNT WORK COME BACK  TO
+    		console.log("HERE");
+               initializePlayers(); 
+               $scope.cancelPlayer();
+               //DOESNT WORK COME BACK  TO
             }, function(response) {
                 console.log("fail: " + response);
             });
@@ -45,7 +47,8 @@ function PlayersController($scope, PlayersFactory) {
     }
 
     $scope.cancelPlayer = function(){
-
+    	$scope.player= {};
+    	$scope.playerPopUp();
     }
 
 }

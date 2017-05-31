@@ -26,6 +26,7 @@ app.post('/newPlayer', function(req, res) {
                 if (err) throw err;
                 console.log('The file has been saved!');
             });
+           res.send(data);
         }
     });
 });
